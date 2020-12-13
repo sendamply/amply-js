@@ -1,0 +1,8 @@
+*.swp
+.DS_Store
+node_modules/
+*.log
+package-lock.json
+yarn.lock
+*.bak
+.idea/
