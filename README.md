@@ -63,7 +63,7 @@ html | HTML portion of the message.
 text | Text portion of the message.
 content | An array of objects containing the following keys: `type` (required), `value` (required).
 template | The template to use. This may be a string (the UUID of the template), an array of UUID's (useful for A/B/... testing where one is randomly selected), or an object of the format `{template1Uuid: 0.25, template2Uuid: 0.75}` (useful for weighted A/B/... testing).
-dynamicTemplateData | The dynamic data to be replaced in your template.  This is an object of the format `{variable1: 'replacement1', ...}`. Variables should be defined in your template body as `${variable1}`.
+dynamicTemplateData | The dynamic data to be replaced in your template.  This is an object of the format `{variable1: 'replacement1', ...}`. Variables should be defined in your template body using handlebars syntax `{{variable1}}`.
 replyTo |Email address of who should receive replies.  This may be a string or an object with `name` and `email` keys.
 headers | An object where the header name is the key and header value is the value.
 ipOrPoolUuid | The UUID of the IP address or IP pool you want to send from.  Default is your Global pool.
