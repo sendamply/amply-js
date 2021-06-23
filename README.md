@@ -76,6 +76,7 @@ attachments[][content_id] | The content ID of your attachment.
 clicktracking | Enable or disable clicktracking.
 categories | An array of email categories you can associate with your message.
 substitutions | An object of the format `{subFrom: 'subTo', ...}` of substitutions.
+sendAt | Delay sending until a specified time. An ISO8601 formatted string with timezone information.
 
 __Example__
 
@@ -97,7 +98,8 @@ amply.email.create({
   headers: {'X-Testing': 'Test'},
   categories: ['Test'],
   clicktracking: true,
-  substitutions: {'sub1': 'replacement1'}
+  substitutions: {'sub1': 'replacement1'},
+  sendAt: "2021-06-23T15:26:03-07:00"
 }).then(msg => console.log(msg))
 .catch(err => console.log(err.response));
 
