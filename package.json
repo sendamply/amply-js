@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/sendamply/amply-js#readme",
   "dependencies": {
+    "abort-controller": "^3.0.0",
     "cacheable-lookup": "^6.0.4",
     "node-fetch": "^2.6.1",
     "qs": "^6.9.4"
